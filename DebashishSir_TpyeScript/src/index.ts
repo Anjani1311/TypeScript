@@ -21,7 +21,7 @@
 //Enum Type
 //Interface Type
 //Function Type
-//Object Type
+//Object Typek
 
 
 function Compare<T>(a:T,b:T):boolean{
@@ -29,9 +29,9 @@ function Compare<T>(a:T,b:T):boolean{
     return a==b;
 }
 
-let out1=Compare<string>("Anjani", "Resham")
+let out6=Compare<string>("Anjani", "Resham")
 
-let out2=Compare<number>(2, 2)
+let out7=Compare<number>(2, 2)
 
 let out3=Compare<number>(2.3, 4.2)
 

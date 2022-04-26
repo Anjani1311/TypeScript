@@ -1,3 +1,4 @@
+"use strict";
 //where string is parameter datatype and void is return type
 function log(msg) {
     console.log(msg);
@@ -11,6 +12,6 @@ function log2(msg) {
     return 7;
 }
 log("Anjani");
-var useless = undefined;
-useless = 1;
+let useless = undefined;
+//useless=1;
 console.log(useless);
