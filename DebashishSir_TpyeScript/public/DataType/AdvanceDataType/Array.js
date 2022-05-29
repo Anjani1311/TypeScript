@@ -6,6 +6,6 @@ let list2 = [1, 2, 3];
 let Skils = ['Anjani'];
 Skils[0] = "Anjani";
 Skils[1] = "pandit";
-Skils[2] = "sahu";
+Skils[2] = "ayat";
 Skils.push("Anjani");
 console.log("Skills:", Skils);

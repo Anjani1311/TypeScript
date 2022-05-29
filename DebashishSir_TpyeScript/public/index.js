@@ -19,7 +19,7 @@
 //Enum Type
 //Interface Type
 //Function Type
-//Object Type
+//Object Typek
 function Compare(a, b) {
     //<T> denotes As Type(InstanceType)
     return a == b;

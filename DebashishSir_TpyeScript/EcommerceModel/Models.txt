@@ -1,0 +1,194 @@
+Entity:
+1. User
+2. Marchant
+3. Product
+4. Category
+5. Brand
+6. Order
+7. Cart 
+8. Address
+9. Review
+10. Rating/ WishList
+11.Shipping
+12. Payment Details
+
+
+1. User:
+Name
+Email
+Phone Number
+Password
+Avtar/Profile Pic
+Role(User, Admin)
+Google Id
+Facebook Id
+Reset Password Token
+Reset Password Expiry
+IsActive
+IsDelete
+
+2. Marchant
+Name
+Email
+Phone Number
+Password
+Avtar/Profile Pic
+Brand
+Bussiness
+Status(Waiting, Rejected, Approved)
+IsActive
+IsDelete
+Rating
+Review
+
+3. Product
+SKU(stock Keeping Unit)
+Name
+Slug
+Image URL[]
+Image Key
+Description
+Quantity
+Price(Rack Price, Discounted Price)
+ThumbNail
+isDisplayed
+IsActive
+isDeleted
+Tax Rate
+Category Id
+Brand Id
+
+3.1 Product Attribute
+Name
+Attribute Id
+Attribute Values
+
+3.2 Product Attributes
+Attribute[]
+
+3.3 Products
+Product[]
+Page Count
+Item Count
+Current page
+
+4. Category
+Id
+Brand Id
+Name
+Slug
+Description
+isDeleted
+IsActive
+
+5.Brand
+Id
+Name
+Slug
+Description
+Marchant Id
+IsActive
+isDeleted
+
+6. Order
+Order Id
+Customer Id
+Total Amount
+Sipping Date
+Order Date
+Status(Deliverd, Shipping, Processing, Return, Cancelled)
+Comment
+Auth Code  #Payment Id Revied Form Payment GateWay
+Shipping Id
+Tax Id
+Payment Method
+Shipping Address
+
+6.1 Order Details:
+Item Id
+Order Id
+Product Id
+Attributes[]
+Product Name
+Quantity
+Unit Cost
+
+6.2 Order Status
+Status(Deliverd, Shipping, Processing, Return, Cancelled)
+Comment
+Auth Code  #Payment Id Revied Form Payment GateWay
+
+7. Cart
+Item Id
+Cart Id
+Product Id
+Attributes[]
+Quantity
+BuyNow
+Current Date
+
+7.1 Cart Item Quantity
+Quantity
+
+7.2 Cart Order
+Cart Id
+Customer Id
+Sipping Id 
+Tax Id
+Product Id
+
+8. Address:
+User
+Address
+City 
+State
+Country
+Zip Code
+isDefault
+
+9. Review 
+Product 
+User 
+Title
+Rating
+Review
+isRecommeded
+Status
+image URl[]
+Marchant(Waiting, Rejected, Approved)
+
+10. WishList
+Product 
+User
+isLiked
+
+11.Shipping
+Customer Id
+Address Line 1
+Address line 2
+City
+Region
+Country
+Zip Code
+
+11.1 Shipping Rate
+Shipping Id
+Shipping Cost
+Shipping Region Id
+Shipping Type
+
+11.2 Shipping Region
+Shipping Region
+Shipping Region isRecommeded
+
+
+12. Payment Details
+User Id
+Email
+Name
+Payment Id
+Address 
+Cart Id
+Status
+
+
